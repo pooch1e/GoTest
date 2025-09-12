@@ -1,7 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func main() {
-	fmt.Println("test")
+
+	investmentAmount, years := 1000.0, 5.0
+	expectedReturnRate := 5.5
+
+	futureValue := (investmentAmount) * math.Pow((1+expectedReturnRate/100), (years))
+	fmt.Println(futureValue)
 }
