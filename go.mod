@@ -1,3 +1,3 @@
-module example/investment
+module example/greetings
 
 go 1.25.1
