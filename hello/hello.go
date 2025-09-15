@@ -4,13 +4,12 @@ import (
 	"fmt"
 
 	"example/greetings"
-	"log"
 )
 
 func main() {
-	message, err := greetings.Hello(" ")
+	message, err := greetings.Hello("Joel")
 	if err != nil {
-		return log.Fatal(err)
+		println("error, no name provided")
 	}
 	fmt.Println(message)
 
